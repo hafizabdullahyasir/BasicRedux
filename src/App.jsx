@@ -1,4 +1,5 @@
 
+import Buttons from '../components/Buttons'
 import './App.css'
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <>
-    <h1 className='h1'>Counter Application</h1>
+    
+    <Buttons/>
     </>
   )
 }
