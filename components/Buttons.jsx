@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 
 export default function Buttons(){
@@ -13,13 +13,13 @@ return(
         <h1 className='h1'>Counter Application</h1>
         <h1 className="h1">Count:</h1>
         <div className="button">
-     <button >
+     <button  onClick={()  => dispatchEvent({type: 'INCREMENT'})}>
         increment 
      </button>
-     <button >
+     <button  onClick={()  => dispatchEvent({type: 'DECREMENT' })}>
       decrement 
      </button>
-     <button >
+     <button onClick={()  => dispatchEvent({type: 'RESET'})} >
         Reset 
      </button>
 
